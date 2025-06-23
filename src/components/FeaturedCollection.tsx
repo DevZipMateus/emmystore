@@ -14,7 +14,7 @@ const FeaturedCollection = () => {
       id: 2,
       name: 'STREET KING TEE',
       price: 'R$ 149',
-      image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=2070&auto=format&fit=crop',
+      image: '/lovable-uploads/9c762b1b-358b-4424-a27a-23afe414ae1e.png',
       category: 'CAMISETAS'
     },
     {
@@ -42,7 +42,7 @@ const FeaturedCollection = () => {
       id: 6,
       name: 'MIDNIGHT SHORTS',
       price: 'R$ 179',
-      image: 'https://images.unsplash.com/photo-1506629905607-675e2840c8b6?q=80&w=2070&auto=format&fit=crop',
+      image: '/lovable-uploads/9c762b1b-358b-4424-a27a-23afe414ae1e.png',
       category: 'SHORTS'
     }
   ];
