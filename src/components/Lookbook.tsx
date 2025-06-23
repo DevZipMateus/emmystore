@@ -1,0 +1,80 @@
+
+import React from 'react';
+
+const Lookbook = () => {
+  const lookbookImages = [
+    {
+      id: 1,
+      image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop',
+      title: 'CITY NIGHTS',
+      description: 'Navegando pelas ruas com estilo'
+    },
+    {
+      id: 2,
+      image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?q=80&w=2070&auto=format&fit=crop',
+      title: 'NEON VIBES',
+      description: 'Energia urbana em cada peça'
+    },
+    {
+      id: 3,
+      image: 'https://images.unsplash.com/photo-1527576539890-dfa815648363?q=80&w=2070&auto=format&fit=crop',
+      title: 'CONCRETE JUNGLE',
+      description: 'Sobrevivendo na selva de pedra'
+    },
+    {
+      id: 4,
+      image: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=2070&auto=format&fit=crop',
+      title: 'STREET CULTURE',
+      description: 'Autenticidade em cada movimento'
+    }
+  ];
+
+  return (
+    <section id="lookbook" className="py-20 bg-urban-black">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-orbitron font-black text-white mb-4">
+            LOOKBOOK <span className="text-urban-flame">URBNSZN</span>
+          </h2>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+            Veja como nossa comunidade veste a atitude nas ruas da cidade.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {lookbookImages.map((item, index) => (
+            <div 
+              key={item.id}
+              className="group relative overflow-hidden rounded-lg aspect-[4/5] md:aspect-[3/4] animate-slide-up"
+              style={{ animationDelay: `${index * 150}ms` }}
+            >
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-urban-black/80 via-transparent to-transparent"></div>
+              
+              {/* Content */}
+              <div className="absolute bottom-0 left-0 right-0 p-8 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                <h3 className="text-2xl md:text-3xl font-orbitron font-bold mb-2 text-urban-neon">
+                  {item.title}
+                </h3>
+                <p className="text-gray-300 text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+                  {item.description}
+                </p>
+              </div>
+
+              {/* Neon border effect on hover */}
+              <div className="absolute inset-0 neon-border opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Lookbook;
