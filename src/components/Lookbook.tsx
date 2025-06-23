@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Lookbook = () => {
@@ -23,7 +22,7 @@ const Lookbook = () => {
     },
     {
       id: 4,
-      image: 'https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?q=80&w=2070&auto=format&fit=crop',
+      image: '/lovable-uploads/046559f0-1539-4bf0-ba3a-7fef0a57e923.png',
       title: 'STREET CULTURE',
       description: 'Autenticidade em cada movimento'
     }
