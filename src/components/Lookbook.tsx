@@ -5,25 +5,25 @@ const Lookbook = () => {
   const lookbookImages = [
     {
       id: 1,
-      image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=2070&auto=format&fit=crop',
       title: 'CITY NIGHTS',
       description: 'Navegando pelas ruas com estilo'
     },
     {
       id: 2,
-      image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?q=80&w=2070&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1607345366928-199ea26cfe3e?q=80&w=2070&auto=format&fit=crop',
       title: 'NEON VIBES',
       description: 'Energia urbana em cada peça'
     },
     {
       id: 3,
-      image: 'https://images.unsplash.com/photo-1527576539890-dfa815648363?q=80&w=2070&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?q=80&w=2070&auto=format&fit=crop',
       title: 'CONCRETE JUNGLE',
       description: 'Sobrevivendo na selva de pedra'
     },
     {
       id: 4,
-      image: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=2070&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?q=80&w=2070&auto=format&fit=crop',
       title: 'STREET CULTURE',
       description: 'Autenticidade em cada movimento'
     }

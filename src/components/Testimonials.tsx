@@ -7,41 +7,41 @@ const Testimonials = () => {
       id: 1,
       name: '@streetking.sp',
       text: 'URBNSZN entende o que é autenticidade. Cada peça conta uma história real.',
-      image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop'
+      image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=2070&auto=format&fit=crop'
     },
     {
       id: 2,
       name: '@graffitigirl',
       text: 'Finalmente uma marca que representa nossa cultura de verdade. Respect!',
-      image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?q=80&w=2070&auto=format&fit=crop'
+      image: 'https://images.unsplash.com/photo-1607345366928-199ea26cfe3e?q=80&w=2070&auto=format&fit=crop'
     },
     {
       id: 3,
       name: '@skateboard.vibes',
       text: 'Qualidade top, style único. URBNSZN é referência no streetwear nacional.',
-      image: 'https://images.unsplash.com/photo-1527576539890-dfa815648363?q=80&w=2070&auto=format&fit=crop'
+      image: 'https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?q=80&w=2070&auto=format&fit=crop'
     }
   ];
 
   const instagramPosts = [
     {
       id: 1,
-      image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=2070&auto=format&fit=crop',
       likes: '1,234'
     },
     {
       id: 2,
-      image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?q=80&w=2070&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=2070&auto=format&fit=crop',
       likes: '2,156'
     },
     {
       id: 3,
-      image: 'https://images.unsplash.com/photo-1527576539890-dfa815648363?q=80&w=2070&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=2070&auto=format&fit=crop',
       likes: '987'
     },
     {
       id: 4,
-      image: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=2070&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?q=80&w=2070&auto=format&fit=crop',
       likes: '3,421'
     }
   ];

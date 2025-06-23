@@ -7,42 +7,42 @@ const FeaturedCollection = () => {
       id: 1,
       name: 'CONCRETE HOODIE',
       price: 'R$ 299',
-      image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?q=80&w=2070&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=2070&auto=format&fit=crop',
       category: 'HOODIES'
     },
     {
       id: 2,
       name: 'STREET KING TEE',
       price: 'R$ 149',
-      image: 'https://images.unsplash.com/photo-1527576539890-dfa815648363?q=80&w=2070&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=2070&auto=format&fit=crop',
       category: 'CAMISETAS'
     },
     {
       id: 3,
       name: 'NEON JOGGERS',
       price: 'R$ 249',
-      image: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=2070&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=2070&auto=format&fit=crop',
       category: 'CALÇAS'
     },
     {
       id: 4,
       name: 'URBAN BOMBER',
       price: 'R$ 399',
-      image: 'https://images.unsplash.com/photo-1466442929976-97f336a657be?q=80&w=2070&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?q=80&w=2070&auto=format&fit=crop',
       category: 'JAQUETAS'
     },
     {
       id: 5,
       name: 'GRAFFITI CAP',
       price: 'R$ 89',
-      image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?q=80&w=2070&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=2070&auto=format&fit=crop',
       category: 'ACESSÓRIOS'
     },
     {
       id: 6,
       name: 'MIDNIGHT SHORTS',
       price: 'R$ 179',
-      image: 'https://images.unsplash.com/photo-1527576539890-dfa815648363?q=80&w=2070&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1506629905607-675e2840c8b6?q=80&w=2070&auto=format&fit=crop',
       category: 'SHORTS'
     }
   ];
