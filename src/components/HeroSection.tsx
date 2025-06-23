@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/images/graffiti-hero-bg.png'), url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop')",
+          backgroundImage: "url('/lovable-uploads/bff28d63-8e60-4f7c-aa2a-300e95e8952a.png')",
         }}
       >
         <div className="absolute inset-0 bg-black/70"></div>
