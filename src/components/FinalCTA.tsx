@@ -2,6 +2,12 @@
 import React from 'react';
 
 const FinalCTA = () => {
+  const handleWhatsAppQuote = () => {
+    const message = encodeURIComponent("Olá! Gostaria de solicitar um orçamento para produtos da URBNSZN.");
+    const whatsappNumber = "5511999999999"; // Número fictício
+    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+  };
+
   return (
     <section className="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
       {/* Video Background Simulation */}
@@ -36,8 +42,11 @@ const FinalCTA = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center max-w-md sm:max-w-none mx-auto">
-          <button className="group relative overflow-hidden bg-urban-flame text-white px-8 sm:px-12 py-4 sm:py-6 font-bold text-base sm:text-lg lg:text-xl tracking-wide transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-urban-flame/50 w-full sm:w-auto">
-            <span className="relative z-10">COMPRE AGORA</span>
+          <button 
+            onClick={handleWhatsAppQuote}
+            className="group relative overflow-hidden bg-urban-flame text-white px-8 sm:px-12 py-4 sm:py-6 font-bold text-base sm:text-lg lg:text-xl tracking-wide transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-urban-flame/50 w-full sm:w-auto"
+          >
+            <span className="relative z-10">SOLICITAR ORÇAMENTO</span>
             <div className="absolute inset-0 bg-urban-neon transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
           </button>
 

@@ -47,6 +47,12 @@ const FeaturedCollection = () => {
     }
   ];
 
+  const handleWhatsAppClick = (productName: string) => {
+    const message = encodeURIComponent(`Olá! Gostaria de solicitar um orçamento para o produto: ${productName}`);
+    const whatsappNumber = "5511999999999"; // Número fictício
+    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+  };
+
   return (
     <section id="collection" className="py-12 sm:py-16 lg:py-20 bg-urban-concrete">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -80,8 +86,11 @@ const FeaturedCollection = () => {
                 <h3 className="text-sm sm:text-lg lg:text-xl font-bold mb-2 leading-tight">{product.name}</h3>
                 <div className="flex items-center justify-between">
                   <span className="text-lg sm:text-xl lg:text-2xl font-bold text-urban-electric">{product.price}</span>
-                  <button className="bg-urban-neon text-urban-black px-3 py-2 sm:px-4 font-bold text-xs sm:text-sm transition-all duration-300 hover:bg-urban-flame">
-                    COMPRAR
+                  <button 
+                    onClick={() => handleWhatsAppClick(product.name)}
+                    className="bg-urban-neon text-urban-black px-3 py-2 sm:px-4 font-bold text-xs sm:text-sm transition-all duration-300 hover:bg-urban-flame"
+                  >
+                    SOLICITAR ORÇAMENTO
                   </button>
                 </div>
               </div>
