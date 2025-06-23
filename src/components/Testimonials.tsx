@@ -47,47 +47,47 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-urban-concrete">
-      <div className="container mx-auto px-4">
+    <section className="py-12 sm:py-16 lg:py-20 bg-urban-concrete">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Testimonials */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-orbitron font-black text-white mb-4">
+        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-orbitron font-black text-white mb-3 sm:mb-4 px-2">
             O QUE A <span className="text-urban-neon">COMUNIDADE</span> FALA
           </h2>
-          <p className="text-gray-400 text-lg">
+          <p className="text-gray-400 text-sm sm:text-base lg:text-lg px-4">
             Vozes autênticas das ruas que vestem nossa atitude.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16 lg:mb-20">
           {testimonials.map((testimonial, index) => (
             <div 
               key={testimonial.id}
-              className="glass-effect p-6 rounded-lg animate-slide-up"
+              className="glass-effect p-4 sm:p-6 rounded-lg animate-slide-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-urban-neon/20 flex items-center justify-center mr-3">
-                  <span className="text-urban-neon font-bold">@</span>
+              <div className="flex items-center mb-3 sm:mb-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-urban-neon/20 flex items-center justify-center mr-3">
+                  <span className="text-urban-neon font-bold text-sm sm:text-base">@</span>
                 </div>
-                <span className="text-urban-neon font-medium">{testimonial.name}</span>
+                <span className="text-urban-neon font-medium text-sm sm:text-base">{testimonial.name}</span>
               </div>
-              <p className="text-white text-lg leading-relaxed">{testimonial.text}</p>
+              <p className="text-white text-sm sm:text-base lg:text-lg leading-relaxed">{testimonial.text}</p>
             </div>
           ))}
         </div>
 
         {/* Instagram Feed */}
-        <div className="text-center mb-12">
-          <h3 className="text-3xl font-orbitron font-black text-white mb-4">
+        <div className="text-center mb-8 sm:mb-12">
+          <h3 className="text-xl sm:text-2xl lg:text-3xl font-orbitron font-black text-white mb-3 sm:mb-4 px-2">
             #<span className="text-urban-flame">URBNSZNSTYLE</span>
           </h3>
-          <p className="text-gray-400">
+          <p className="text-gray-400 text-sm sm:text-base px-4">
             Compartilhe seu look e marque @urbnszn para aparecer aqui!
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4">
           {instagramPosts.map((post, index) => (
             <div 
               key={post.id}
@@ -97,12 +97,12 @@ const Testimonials = () => {
               <img
                 src={post.image}
                 alt={`Instagram post ${post.id}`}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-urban-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <div className="text-white text-center">
-                  <div className="text-2xl mb-2">❤️</div>
-                  <div className="font-bold">{post.likes}</div>
+                  <div className="text-lg sm:text-2xl mb-1 sm:mb-2">❤️</div>
+                  <div className="font-bold text-sm sm:text-base">{post.likes}</div>
                 </div>
               </div>
             </div>
