@@ -1,65 +1,139 @@
 
 import React from 'react';
+import { Instagram, Facebook, MapPin, Phone, Mail } from 'lucide-react';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer id="contact" className="bg-urban-black border-t border-urban-concrete-light">
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Brand */}
-          <div className="md:col-span-2">
-            <div className="text-3xl font-orbitron font-black text-urban-neon mb-4">
-              URBNSZN
+    <footer className="bg-gray-800 text-white">
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid md:grid-cols-3 gap-8">
+          {/* Logo e Descrição */}
+          <div className="md:col-span-1">
+            <div className="flex items-center mb-4">
+              <img 
+                src="/lovable-uploads/82e2e541-f2e0-4589-83d0-4d68efbd9d96.png" 
+                alt="Emmy Store" 
+                className="h-16 w-auto filter brightness-0 invert"
+              />
             </div>
-            <p className="text-gray-400 mb-6 max-w-md">
-              Mais que roupas, somos um movimento. Representando a cultura urbana 
-              autêntica desde 2020.
+            <p className="text-gray-300 font-inter leading-relaxed mb-6">
+              Sua loja de confiança com os melhores produtos e atendimento personalizado 
+              no Jardim das Amoreiras.
             </p>
             <div className="flex space-x-4">
-              <div className="w-10 h-10 bg-urban-concrete rounded-full flex items-center justify-center hover:bg-urban-neon hover:text-urban-black transition-colors duration-300 cursor-pointer">
-                <span className="font-bold">IG</span>
-              </div>
-              <div className="w-10 h-10 bg-urban-concrete rounded-full flex items-center justify-center hover:bg-urban-neon hover:text-urban-black transition-colors duration-300 cursor-pointer">
-                <span className="font-bold">TT</span>
-              </div>
-              <div className="w-10 h-10 bg-urban-concrete rounded-full flex items-center justify-center hover:bg-urban-neon hover:text-urban-black transition-colors duration-300 cursor-pointer">
-                <span className="font-bold">YT</span>
-              </div>
+              <a
+                href="https://www.instagram.com/emmy.store15?igsh=MW1xMWZocGI1YXZ2eg=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-rose-500 p-3 rounded-full text-white hover:bg-rose-600 transition-all duration-300 hover:scale-110"
+                aria-label="Siga-nos no Instagram"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+              
+              <a
+                href="https://www.facebook.com/profile.php?id=61577696875837&mibextid=ZbWKwL"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-500 p-3 rounded-full text-white hover:bg-blue-600 transition-all duration-300 hover:scale-110"
+                aria-label="Siga-nos no Facebook"
+              >
+                <Facebook className="w-5 h-5" />
+              </a>
             </div>
           </div>
 
-          {/* Links */}
+          {/* Links Rápidos */}
           <div>
-            <h4 className="text-white font-bold text-lg mb-4">SHOP</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-urban-neon transition-colors duration-300">Coleções</a></li>
-              <li><a href="#" className="hover:text-urban-neon transition-colors duration-300">Lançamentos</a></li>
-              <li><a href="#" className="hover:text-urban-neon transition-colors duration-300">Sale</a></li>
-              <li><a href="#" className="hover:text-urban-neon transition-colors duration-300">Gift Cards</a></li>
+            <h3 className="text-lg font-playfair font-semibold mb-4">Links Rápidos</h3>
+            <ul className="space-y-2 font-inter">
+              <li>
+                <button 
+                  onClick={() => document.querySelector('#inicio')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="text-gray-300 hover:text-rose-400 transition-colors duration-300"
+                >
+                  Início
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => document.querySelector('#sobre')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="text-gray-300 hover:text-rose-400 transition-colors duration-300"
+                >
+                  Sobre
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => document.querySelector('#servicos')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="text-gray-300 hover:text-rose-400 transition-colors duration-300"
+                >
+                  Serviços
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => document.querySelector('#localizacao')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="text-gray-300 hover:text-rose-400 transition-colors duration-300"
+                >
+                  Localização
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => document.querySelector('#contato')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="text-gray-300 hover:text-rose-400 transition-colors duration-300"
+                >
+                  Contato
+                </button>
+              </li>
             </ul>
           </div>
 
-          {/* Support */}
+          {/* Informações de Contato */}
           <div>
-            <h4 className="text-white font-bold text-lg mb-4">SUPORTE</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-urban-neon transition-colors duration-300">Contato</a></li>
-              <li><a href="#" className="hover:text-urban-neon transition-colors duration-300">Trocas & Devoluções</a></li>
-              <li><a href="#" className="hover:text-urban-neon transition-colors duration-300">Guia de Tamanhos</a></li>
-              <li><a href="#" className="hover:text-urban-neon transition-colors duration-300">FAQ</a></li>
-            </ul>
+            <h3 className="text-lg font-playfair font-semibold mb-4">Contato</h3>
+            <div className="space-y-3 font-inter">
+              <div className="flex items-start">
+                <MapPin className="w-5 h-5 text-rose-400 mr-3 mt-0.5 flex-shrink-0" />
+                <span className="text-gray-300 text-sm">
+                  Rua Andre Ferreira Menk, 341<br />
+                  Jardim das Amoreiras
+                </span>
+              </div>
+              
+              <div className="flex items-center">
+                <Phone className="w-5 h-5 text-rose-400 mr-3 flex-shrink-0" />
+                <a 
+                  href="tel:+5515991606506"
+                  className="text-gray-300 hover:text-rose-400 transition-colors duration-300 text-sm"
+                >
+                  (15) 99160-6506
+                </a>
+              </div>
+              
+              <div className="flex items-center">
+                <Mail className="w-5 h-5 text-rose-400 mr-3 flex-shrink-0" />
+                <a 
+                  href="mailto:emmy.store15@gmail.com"
+                  className="text-gray-300 hover:text-rose-400 transition-colors duration-300 text-sm"
+                >
+                  emmy.store15@gmail.com
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="border-t border-urban-concrete-light mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-500 text-sm">
-            © 2024 URBNSZN. Todos os direitos reservados.
+        <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-gray-400 font-inter text-sm">
+            © {currentYear} Emmy Store. Todos os direitos reservados.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0 text-sm text-gray-500">
-            <a href="#" className="hover:text-urban-neon transition-colors duration-300">Privacidade</a>
-            <a href="#" className="hover:text-urban-neon transition-colors duration-300">Termos</a>
-            <a href="#" className="hover:text-urban-neon transition-colors duration-300">Cookies</a>
-          </div>
+          <p className="text-gray-500 font-inter text-xs mt-2 md:mt-0">
+            Desenvolvido com ♡ para Emmy Store
+          </p>
         </div>
       </div>
     </footer>

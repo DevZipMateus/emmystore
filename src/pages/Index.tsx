@@ -2,24 +2,24 @@
 import React from 'react';
 import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
-import FeaturedCollection from '../components/FeaturedCollection';
-import Lookbook from '../components/Lookbook';
-import AboutBrand from '../components/AboutBrand';
-import Testimonials from '../components/Testimonials';
-import FinalCTA from '../components/FinalCTA';
+import AboutSection from '../components/AboutSection';
+import ServicesSection from '../components/ServicesSection';
+import LocationSection from '../components/LocationSection';
+import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
+import WhatsAppButton from '../components/WhatsAppButton';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-urban-black">
+    <div className="min-h-screen bg-white">
       <Header />
       <HeroSection />
-      <FeaturedCollection />
-      <Lookbook />
-      <AboutBrand />
-      <Testimonials />
-      <FinalCTA />
+      <AboutSection />
+      <ServicesSection />
+      <LocationSection />
+      <ContactSection />
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };

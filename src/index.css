@@ -3,48 +3,37 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
-
 @layer base {
   :root {
-    --background: 10 10% 4%;
-    --foreground: 0 0% 98%;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
 
-    --card: 10 10% 6%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
 
-    --popover: 10 10% 6%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 120 100% 50%;
-    --primary-foreground: 0 0% 0%;
+    --primary: 346 77% 49%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 0 0% 16%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
 
-    --muted: 0 0% 16%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 0 100% 50%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 0 0% 16%;
-    --input: 0 0% 16%;
-    --ring: 120 100% 50%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 346 77% 49%;
 
     --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
@@ -54,7 +43,7 @@
   }
 
   body {
-    @apply bg-urban-black text-foreground font-inter;
+    @apply bg-background text-foreground font-inter;
     overflow-x: hidden;
   }
 
@@ -65,69 +54,95 @@
 }
 
 @layer components {
-  .hero-text {
-    background: linear-gradient(45deg, #39ff14, #ffff00, #ff3030);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: gradient 3s ease infinite;
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
   }
 
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* Scroll suave personalizado */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #ec4899;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #db2777;
+  }
+
+  /* Animações personalizadas */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
     }
     50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
+      transform: translateY(-10px);
     }
   }
 
-  .urban-gradient {
-    background: linear-gradient(135deg, #0a0a0a 0%, #2a2a2a 50%, #3a3a3a 100%);
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
   }
 
-  .neon-border {
-    border: 2px solid #39ff14;
-    box-shadow: 0 0 10px #39ff14, inset 0 0 10px rgba(57, 255, 20, 0.1);
+  /* Gradientes personalizados */
+  .gradient-rose {
+    background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 50%, #fbcfe8 100%);
   }
 
-  .glass-effect {
-    background: rgba(42, 42, 42, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+  .gradient-blue {
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 50%, #bfdbfe 100%);
   }
 
-  /* Mobile optimizations */
+  .gradient-gray {
+    background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 50%, #e5e7eb 100%);
+  }
+
+  /* Efeitos de hover personalizados */
+  .hover-lift {
+    transition: all 0.3s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+
+  /* Responsividade aprimorada */
   @media (max-width: 640px) {
-    .hero-text {
-      line-height: 1.1;
-      word-break: break-word;
+    .text-responsive {
+      font-size: clamp(1rem, 4vw, 1.25rem);
     }
-  }
-
-  /* Improved background handling */
-  @media (max-width: 768px) {
-    [style*="background-attachment: fixed"] {
-      background-attachment: scroll !important;
+    
+    .heading-responsive {
+      font-size: clamp(1.5rem, 8vw, 3rem);
     }
   }
 }
 
-/* Additional responsive utilities */
-@layer utilities {
-  .text-responsive {
-    @apply text-sm sm:text-base md:text-lg;
+/* Acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
-  
-  .heading-responsive {
-    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl;
-  }
-  
-  .padding-responsive {
-    @apply px-4 sm:px-6 lg:px-8;
-  }
+}
+
+/* Foco visível para acessibilidade */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #ec4899;
+  outline-offset: 2px;
 }
