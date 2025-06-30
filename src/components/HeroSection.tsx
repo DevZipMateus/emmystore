@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const HeroSection = () => {
@@ -13,8 +12,13 @@ const HeroSection = () => {
         backgroundRepeat: 'no-repeat'
       }}
     >
+      {/* Vinheta circular */}
+      <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-black/60" style={{
+        background: 'radial-gradient(circle at center, transparent 0%, transparent 40%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0.7) 100%)'
+      }}></div>
+
       {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/30"></div>
+      <div className="absolute inset-0 bg-black/20"></div>
 
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
