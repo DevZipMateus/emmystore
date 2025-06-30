@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { MessageCircle, X } from 'lucide-react';
+import { X } from 'lucide-react';
 
 const WhatsAppButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -57,10 +57,14 @@ const WhatsAppButton = () => {
       {/* WhatsApp Button */}
       <button
         onClick={handleWhatsAppClick}
-        className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 animate-pulse hover:animate-none"
+        className="bg-white p-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 animate-pulse hover:animate-none"
         aria-label="Fale conosco pelo WhatsApp"
       >
-        <MessageCircle className="w-6 h-6" />
+        <img 
+          src="/lovable-uploads/6ce76677-2d58-45c8-81de-3e13ba1cf2f5.png" 
+          alt="WhatsApp"
+          className="w-12 h-12"
+        />
       </button>
     </div>
   );

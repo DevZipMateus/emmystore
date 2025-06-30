@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Send, Instagram, Facebook } from 'lucide-react';
 
@@ -119,7 +118,11 @@ const ContactSection = () => {
                   type="submit"
                   className="w-full bg-rose-500 text-white px-8 py-4 rounded-lg font-inter font-semibold text-lg hover:bg-rose-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center"
                 >
-                  <Send className="w-5 h-5 mr-2" />
+                  <img 
+                    src="/lovable-uploads/6ce76677-2d58-45c8-81de-3e13ba1cf2f5.png" 
+                    alt="WhatsApp"
+                    className="w-5 h-5 mr-2"
+                  />
                   Enviar via WhatsApp
                 </button>
               </form>
@@ -134,7 +137,14 @@ const ContactSection = () => {
                 
                 <div className="space-y-6">
                   <div>
-                    <h4 className="font-inter font-semibold text-gray-800 mb-2">WhatsApp</h4>
+                    <h4 className="font-inter font-semibold text-gray-800 mb-2 flex items-center">
+                      <img 
+                        src="/lovable-uploads/6ce76677-2d58-45c8-81de-3e13ba1cf2f5.png" 
+                        alt="WhatsApp"
+                        className="w-5 h-5 mr-2"
+                      />
+                      WhatsApp
+                    </h4>
                     <a 
                       href="https://wa.me/5515991606506"
                       target="_blank"
