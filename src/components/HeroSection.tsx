@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const HeroSection = () => {
@@ -23,8 +24,19 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Logo */}
-          <div className="mb-8">
-            <img src="/lovable-uploads/82e2e541-f2e0-4589-83d0-4d68efbd9d96.png" alt="Emmy Store - Sua Loja de Referência" className="h-32 md:h-40 w-auto mx-auto drop-shadow-xl" />
+          <div className="mb-8 relative">
+            <div className="relative inline-block">
+              <img src="/lovable-uploads/82e2e541-f2e0-4589-83d0-4d68efbd9d96.png" alt="Emmy Store - Sua Loja de Referência" className="h-32 md:h-40 w-auto mx-auto drop-shadow-xl relative z-10" />
+              
+              {/* Vinheta circular na imagem */}
+              <div 
+                className="absolute inset-0 rounded-full pointer-events-none"
+                style={{
+                  background: 'radial-gradient(circle at center, transparent 30%, transparent 50%, rgba(236, 72, 153, 0.1) 70%, rgba(236, 72, 153, 0.3) 85%, rgba(236, 72, 153, 0.5) 100%)',
+                  transform: 'scale(1.2)'
+                }}
+              ></div>
+            </div>
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-playfair font-bold text-white mb-6 leading-tight drop-shadow-lg">
