@@ -1,7 +1,17 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi,
+} from "@/components/ui/carousel";
 
 const ProductGallery = () => {
+  const [api, setApi] = React.useState<CarouselApi>();
+
   const galleryImages = [
     {
       id: 1,
@@ -65,6 +75,16 @@ const ProductGallery = () => {
     }
   ];
 
+  useEffect(() => {
+    if (!api) return;
+
+    const interval = setInterval(() => {
+      api.scrollNext();
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [api]);
+
   return (
     <section id="galeria" className="py-20 bg-gradient-to-br from-gray-50 to-rose-50">
       <div className="container mx-auto px-4">
@@ -77,35 +97,46 @@ const ProductGallery = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {galleryImages.map((item, index) => (
-            <div 
-              key={item.id}
-              className="group relative overflow-hidden rounded-xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <div className="aspect-square overflow-hidden">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-              </div>
-              
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              
-              {/* Content */}
-              <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                <h3 className="text-lg font-playfair font-semibold mb-1 leading-tight">
-                  {item.title}
-                </h3>
-                <p className="text-sm font-inter text-gray-200">
-                  {item.description}
-                </p>
-              </div>
-            </div>
-          ))}
+        <div className="max-w-4xl mx-auto">
+          <Carousel
+            setApi={setApi}
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {galleryImages.map((item) => (
+                <CarouselItem key={item.id} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="group relative overflow-hidden rounded-xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in">
+                    <div className="aspect-square overflow-hidden">
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                      />
+                    </div>
+                    
+                    {/* Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    {/* Content */}
+                    <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                      <h3 className="text-lg font-playfair font-semibold mb-1 leading-tight">
+                        {item.title}
+                      </h3>
+                      <p className="text-sm font-inter text-gray-200">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-4" />
+            <CarouselNext className="right-4" />
+          </Carousel>
         </div>
 
         <div className="text-center mt-12">
