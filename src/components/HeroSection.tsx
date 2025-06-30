@@ -1,22 +1,15 @@
-
 import React from 'react';
-
 const HeroSection = () => {
-  return (
-    <section 
-      id="inicio" 
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      style={{
-        backgroundImage: 'url(/lovable-uploads/ddcf7c62-c8d6-45b2-a429-37a127eead1b.png)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
-    >
+  return <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{
+    backgroundImage: 'url(/lovable-uploads/ddcf7c62-c8d6-45b2-a429-37a127eead1b.png)',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
+  }}>
       {/* Vinheta circular */}
       <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-black/60" style={{
-        background: 'radial-gradient(circle at center, transparent 0%, transparent 40%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0.7) 100%)'
-      }}></div>
+      background: 'radial-gradient(circle at center, transparent 0%, transparent 40%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0.7) 100%)'
+    }}></div>
 
       {/* Overlay for better text readability */}
       <div className="absolute inset-0 bg-black/20"></div>
@@ -26,16 +19,13 @@ const HeroSection = () => {
           {/* Logo */}
           <div className="mb-8 relative">
             <div className="relative inline-block">
-              <img src="/lovable-uploads/82e2e541-f2e0-4589-83d0-4d68efbd9d96.png" alt="Emmy Store - Sua Loja de Referência" className="h-32 md:h-40 w-auto mx-auto drop-shadow-xl relative z-10" />
+              
               
               {/* Vinheta circular na imagem */}
-              <div 
-                className="absolute inset-0 rounded-full pointer-events-none"
-                style={{
-                  background: 'radial-gradient(circle at center, transparent 30%, transparent 50%, rgba(236, 72, 153, 0.1) 70%, rgba(236, 72, 153, 0.3) 85%, rgba(236, 72, 153, 0.5) 100%)',
-                  transform: 'scale(1.2)'
-                }}
-              ></div>
+              <div className="absolute inset-0 rounded-full pointer-events-none" style={{
+              background: 'radial-gradient(circle at center, transparent 30%, transparent 50%, rgba(236, 72, 153, 0.1) 70%, rgba(236, 72, 153, 0.3) 85%, rgba(236, 72, 153, 0.5) 100%)',
+              transform: 'scale(1.2)'
+            }}></div>
             </div>
           </div>
 
@@ -66,8 +56,6 @@ const HeroSection = () => {
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
