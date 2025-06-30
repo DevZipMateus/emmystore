@@ -57,7 +57,7 @@ const WhatsAppButton = () => {
       {/* WhatsApp Button */}
       <button
         onClick={handleWhatsAppClick}
-        className="bg-white p-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 animate-pulse hover:animate-none"
+        className="bg-white p-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
         aria-label="Fale conosco pelo WhatsApp"
       >
         <img 

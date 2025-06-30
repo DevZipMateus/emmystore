@@ -1,0 +1,132 @@
+
+import React from 'react';
+
+const ProductGallery = () => {
+  const galleryImages = [
+    {
+      id: 1,
+      image: '/lovable-uploads/6fadff1c-2230-47b1-9300-fffedadce1aa.png',
+      title: 'Blusas de Tricô Variadas',
+      description: 'Coleção de blusas em diferentes cores e texturas'
+    },
+    {
+      id: 2,
+      image: '/lovable-uploads/aa1cdf72-c687-45ff-a668-db0032da985e.png',
+      title: 'Shorts Emmy',
+      description: 'Shorts confortáveis com etiqueta da marca Emmy'
+    },
+    {
+      id: 3,
+      image: '/lovable-uploads/692f4fd1-3200-4e5c-9ee1-f8fa04731a2c.png',
+      title: 'Blusa Térmica Flanelada',
+      description: 'Peça ideal para dias mais frios'
+    },
+    {
+      id: 4,
+      image: '/lovable-uploads/cb1059d9-3316-42ee-9a9d-cddfc1b6de95.png',
+      title: 'Blusa Branca Emmy',
+      description: 'Blusa básica branca com textura especial'
+    },
+    {
+      id: 5,
+      image: '/lovable-uploads/f8a9b399-d88a-49d3-b823-772288cb4166.png',
+      title: 'Blusa Rose Emmy',
+      description: 'Blusa em tricô na cor rose com acabamento perfeito'
+    },
+    {
+      id: 6,
+      image: '/lovable-uploads/fe85c3c3-8fb9-4098-ba8d-762ba66cec5e.png',
+      title: 'Coleção de Blusas com Pérolas',
+      description: 'Blusas decoradas com pérolas - R$ 79,90'
+    },
+    {
+      id: 7,
+      image: '/lovable-uploads/408bac3f-1e5b-4b75-b960-fee43530dde5.png',
+      title: 'Vestido Verde Elegante',
+      description: 'Vestido verde com detalhes em franzido'
+    },
+    {
+      id: 8,
+      image: '/lovable-uploads/c3e2fef8-d287-44a6-ac5c-9ebcfba55d76.png',
+      title: 'Blusas Variadas',
+      description: 'Coleção de blusas - Apenas R$ 59,90'
+    },
+    {
+      id: 9,
+      image: '/lovable-uploads/fafd4c8f-a65a-4e5e-baf7-6cb7555be82d.png',
+      title: 'Blusas Emmy Multicores',
+      description: 'Variedade de cores da marca Emmy'
+    },
+    {
+      id: 10,
+      image: '/lovable-uploads/38c9e00b-77de-4e11-8805-0a9c1d17a274.png',
+      title: 'Blusa Listrada Emmy',
+      description: 'Blusa com listras pretas e brancas'
+    }
+  ];
+
+  return (
+    <section id="galeria" className="py-20 bg-gradient-to-br from-gray-50 to-rose-50">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-5xl font-playfair font-bold text-gray-800 mb-6">
+            Nossa <span className="text-rose-500">Galeria</span>
+          </h2>
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto font-inter leading-relaxed">
+            Conheça nossa coleção de roupas femininas com qualidade e estilo únicos.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {galleryImages.map((item, index) => (
+            <div 
+              key={item.id}
+              className="group relative overflow-hidden rounded-xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              <div className="aspect-square overflow-hidden">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+              </div>
+              
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              
+              {/* Content */}
+              <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <h3 className="text-lg font-playfair font-semibold mb-1 leading-tight">
+                  {item.title}
+                </h3>
+                <p className="text-sm font-inter text-gray-200">
+                  {item.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <button 
+            onClick={() => {
+              const message = encodeURIComponent("Olá! Gostaria de conhecer mais produtos da Emmy Store.");
+              window.open(`https://wa.me/5515991606506?text=${message}`, '_blank');
+            }}
+            className="bg-rose-500 text-white px-8 py-4 rounded-full font-inter font-semibold text-lg hover:bg-rose-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center mx-auto"
+          >
+            <img 
+              src="/lovable-uploads/6ce76677-2d58-45c8-81de-3e13ba1cf2f5.png" 
+              alt="WhatsApp"
+              className="w-5 h-5 mr-2"
+            />
+            Ver Mais Produtos
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ProductGallery;
