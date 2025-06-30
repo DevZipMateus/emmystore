@@ -1,8 +1,12 @@
+
 import React from 'react';
 import { Instagram, Facebook, MapPin, Phone, Mail } from 'lucide-react';
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  return <footer className="bg-gray-800 text-white">
+
+  return (
+    <footer className="bg-gray-800 text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-3 gap-8">
           {/* Logo e Descrição */}
@@ -48,6 +52,13 @@ const Footer = () => {
                 behavior: 'smooth'
               })} className="text-gray-300 hover:text-rose-400 transition-colors duration-300">
                   Serviços
+                </button>
+              </li>
+              <li>
+                <button onClick={() => document.querySelector('#instagram')?.scrollIntoView({
+                behavior: 'smooth'
+              })} className="text-gray-300 hover:text-rose-400 transition-colors duration-300">
+                  Instagram
                 </button>
               </li>
               <li>
@@ -105,6 +116,8 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;
