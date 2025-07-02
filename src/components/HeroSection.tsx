@@ -1,3 +1,4 @@
+
 import React from 'react';
 const HeroSection = () => {
   return <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{
@@ -23,7 +24,7 @@ const HeroSection = () => {
               
               {/* Vinheta circular na imagem */}
               <div className="absolute inset-0 rounded-full pointer-events-none" style={{
-              background: 'radial-gradient(circle at center, transparent 30%, transparent 50%, rgba(236, 72, 153, 0.1) 70%, rgba(236, 72, 153, 0.3) 85%, rgba(236, 72, 153, 0.5) 100%)',
+              background: 'radial-gradient(circle at center, transparent 30%, transparent 50%, rgba(176, 137, 131, 0.1) 70%, rgba(176, 137, 131, 0.3) 85%, rgba(176, 137, 131, 0.5) 100%)',
               transform: 'scale(1.2)'
             }}></div>
             </div>

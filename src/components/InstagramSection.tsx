@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Instagram, Heart, MessageCircle, Share } from 'lucide-react';
 const InstagramSection = () => {
@@ -32,7 +33,7 @@ const InstagramSection = () => {
     likes: '267',
     comments: '18'
   }];
-  return <section id="instagram" className="py-16 bg-gradient-to-br from-pink-50 via-white to-rose-50">
+  return <section id="instagram" className="py-16 bg-gradient-to-br from-rose-50 via-white to-rose-50">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
@@ -45,7 +46,7 @@ const InstagramSection = () => {
           <p className="text-lg text-gray-600 font-inter max-w-2xl mx-auto mb-6">
             Acompanhe nossos produtos mais recentes, promoções especiais e novidades da Emmy Store
           </p>
-          <a href="https://www.instagram.com/emmy.store15?igsh=MW1xMWZocGI1YXZ2eg==" target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-full font-inter font-semibold text-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
+          <a href="https://www.instagram.com/emmy.store15?igsh=MW1xMWZocGI1YXZ2eg==" target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-gradient-to-r from-rose-400 to-rose-500 text-white px-8 py-3 rounded-full font-inter font-semibold text-lg hover:from-rose-500 hover:to-rose-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
             <Instagram className="w-5 h-5 mr-2" />
             @emmy.store15
           </a>

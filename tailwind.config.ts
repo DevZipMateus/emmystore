@@ -63,18 +63,18 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Paleta personalizada da Emmy Store
+				// Paleta personalizada da Emmy Store - alterada para #b08983
 				rose: {
-					50: '#fdf2f8',
-					100: '#fce7f3',
-					200: '#fbcfe8',
-					300: '#f9a8d4',
-					400: '#f472b6',
-					500: '#ec4899',
-					600: '#db2777',
-					700: '#be185d',
-					800: '#9d174d',
-					900: '#831843'
+					50: '#faf8f7',
+					100: '#f5f0ee',
+					200: '#ebe0dc',
+					300: '#dcc9c0',
+					400: '#c7a698',
+					500: '#b08983',
+					600: '#9c6f68',
+					700: '#825955',
+					800: '#6c4a47',
+					900: '#5a3e3c'
 				}
 			},
 			fontFamily: {

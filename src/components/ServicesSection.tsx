@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ShoppingBag, Truck, CreditCard, Clock } from 'lucide-react';
 
@@ -35,7 +34,7 @@ const ServicesSection = () => {
       case 'rose':
         return {
           bg: 'bg-rose-500',
-          gradient: 'from-rose-50 to-pink-50',
+          gradient: 'from-rose-50 to-rose-100',
           hover: 'hover:shadow-rose-200'
         };
       case 'blue':

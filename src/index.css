@@ -14,7 +14,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 346 77% 49%;
+    --primary: 15 15% 61%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96%;
@@ -31,7 +31,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 346 77% 49%;
+    --ring: 15 15% 61%;
 
     --radius: 0.5rem;
   }
@@ -72,12 +72,12 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #ec4899;
+    background: #b08983;
     border-radius: 4px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #db2777;
+    background: #9c6f68;
   }
 
   /* Animações personalizadas */
@@ -96,7 +96,7 @@
 
   /* Gradientes personalizados */
   .gradient-rose {
-    background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 50%, #fbcfe8 100%);
+    background: linear-gradient(135deg, #faf8f7 0%, #f5f0ee 50%, #ebe0dc 100%);
   }
 
   .gradient-blue {
@@ -143,6 +143,6 @@ button:focus-visible,
 a:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid #ec4899;
+  outline: 2px solid #b08983;
   outline-offset: 2px;
 }
