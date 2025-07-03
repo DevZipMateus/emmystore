@@ -9,7 +9,7 @@ const AboutSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-playfair font-bold text-gray-800 mb-6">
-              Sobre a <span className="text-rose-500">Emmy Store</span>
+              Sobre a <span className="text-[#bd8c90]">Emmy Store</span>
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto font-inter leading-relaxed">
               Uma loja que nasceu do sonho de oferecer produtos de qualidade com atendimento diferenciado, 
@@ -35,9 +35,9 @@ const AboutSection = () => {
             </div>
             
             <div className="grid grid-cols-1 gap-6">
-              <div className="bg-gradient-to-br from-rose-50 to-pink-50 p-6 rounded-2xl">
+              <div className="bg-gradient-to-br from-[#faf8f8] to-[#f4eff0] p-6 rounded-2xl">
                 <div className="flex items-center mb-4">
-                  <div className="bg-rose-500 p-3 rounded-full mr-4">
+                  <div className="bg-[#bd8c90] p-3 rounded-full mr-4">
                     <Heart className="w-6 h-6 text-white" />
                   </div>
                   <h4 className="text-xl font-playfair font-semibold text-gray-800">
@@ -50,9 +50,9 @@ const AboutSection = () => {
                 </p>
               </div>
               
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-2xl">
+              <div className="bg-gradient-to-br from-[#faf8f8] to-[#f4eff0] p-6 rounded-2xl">
                 <div className="flex items-center mb-4">
-                  <div className="bg-blue-500 p-3 rounded-full mr-4">
+                  <div className="bg-[#bd8c90] p-3 rounded-full mr-4">
                     <Star className="w-6 h-6 text-white" />
                   </div>
                   <h4 className="text-xl font-playfair font-semibold text-gray-800">
@@ -65,9 +65,9 @@ const AboutSection = () => {
                 </p>
               </div>
               
-              <div className="bg-gradient-to-br from-gray-50 to-slate-50 p-6 rounded-2xl">
+              <div className="bg-gradient-to-br from-[#faf8f8] to-[#f4eff0] p-6 rounded-2xl">
                 <div className="flex items-center mb-4">
-                  <div className="bg-gray-600 p-3 rounded-full mr-4">
+                  <div className="bg-[#bd8c90] p-3 rounded-full mr-4">
                     <Users className="w-6 h-6 text-white" />
                   </div>
                   <h4 className="text-xl font-playfair font-semibold text-gray-800">

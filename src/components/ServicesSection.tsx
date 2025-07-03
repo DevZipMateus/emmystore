@@ -30,35 +30,20 @@ const ServicesSection = () => {
   ];
 
   const getColorClasses = (color: string) => {
-    switch (color) {
-      case 'rose':
-        return {
-          bg: 'bg-rose-500',
-          gradient: 'from-rose-50 to-rose-100',
-          hover: 'hover:shadow-rose-200'
-        };
-      case 'blue':
-        return {
-          bg: 'bg-blue-500',
-          gradient: 'from-blue-50 to-indigo-50',
-          hover: 'hover:shadow-blue-200'
-        };
-      default:
-        return {
-          bg: 'bg-gray-600',
-          gradient: 'from-gray-50 to-slate-50',
-          hover: 'hover:shadow-gray-200'
-        };
-    }
+    return {
+      bg: 'bg-[#bd8c90]',
+      gradient: 'from-[#faf8f8] to-[#f4eff0]',
+      hover: 'hover:shadow-[#bd8c90]/20'
+    };
   };
 
   return (
-    <section id="servicos" className="py-20 bg-gradient-to-br from-gray-50 to-rose-50">
+    <section id="servicos" className="py-20 bg-gradient-to-br from-gray-50 to-[#faf8f8]">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-playfair font-bold text-gray-800 mb-6">
-              Nossos <span className="bg-gradient-to-r from-rose-600 via-rose-500 to-rose-700 bg-clip-text text-transparent font-extrabold">Serviços</span>
+              Nossos <span className="bg-gradient-to-r from-[#bd8c90] via-[#d4c1c7] to-[#bd8c90] bg-clip-text text-transparent font-extrabold">Serviços</span>
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto font-inter leading-relaxed">
               Oferecemos uma experiência completa de compra, desde a seleção dos produtos 

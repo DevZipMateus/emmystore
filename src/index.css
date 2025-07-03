@@ -14,7 +14,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 15 15% 61%;
+    --primary: 351 23% 65%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96%;
@@ -94,9 +94,9 @@
     animation: float 3s ease-in-out infinite;
   }
 
-  /* Gradientes metálicos personalizados - Baseados na imagem rose gold */
+  /* Gradientes metálicos personalizados - Baseados na nova cor #bd8c90 */
   .gradient-rose-gold {
-    background: linear-gradient(135deg, #faf5f2 0%, #ebd4cb 25%, #deb8a8 50%, #b8806a 75%, #a36b56 100%);
+    background: linear-gradient(135deg, #faf8f8 0%, #e7dce0 25%, #d4c1c7 50%, #bd8c90 75%, #a87b80 100%);
     position: relative;
     overflow: hidden;
   }
@@ -118,7 +118,7 @@
   }
 
   .metallic-rose {
-    background: linear-gradient(145deg, #b8806a 0%, #deb8a8 20%, #f5ebe5 40%, #deb8a8 60%, #b8806a 80%, #a36b56 100%);
+    background: linear-gradient(145deg, #bd8c90 0%, #d4c1c7 20%, #f4eff0 40%, #d4c1c7 60%, #bd8c90 80%, #a87b80 100%);
     background-size: 300% 300%;
     animation: metallic-shimmer 4s ease-in-out infinite;
     position: relative;
@@ -126,7 +126,7 @@
     box-shadow: 
       inset 0 1px 0 rgba(255, 255, 255, 0.3),
       inset 0 -1px 0 rgba(0, 0, 0, 0.1),
-      0 4px 8px rgba(163, 107, 86, 0.2);
+      0 4px 8px rgba(189, 140, 144, 0.2);
   }
 
   .metallic-rose::before {
@@ -174,7 +174,7 @@
   }
 
   .metallic-button {
-    background: linear-gradient(145deg, #b8806a 0%, #deb8a8 20%, #f5ebe5 40%, #deb8a8 60%, #b8806a 80%, #a36b56 100%);
+    background: linear-gradient(145deg, #bd8c90 0%, #d4c1c7 20%, #f4eff0 40%, #d4c1c7 60%, #bd8c90 80%, #a87b80 100%);
     background-size: 300% 300%;
     position: relative;
     overflow: hidden;
@@ -182,7 +182,7 @@
     box-shadow: 
       inset 0 1px 0 rgba(255, 255, 255, 0.3),
       inset 0 -1px 0 rgba(0, 0, 0, 0.1),
-      0 4px 12px rgba(163, 107, 86, 0.25);
+      0 4px 12px rgba(189, 140, 144, 0.25);
   }
 
   .metallic-button:hover {

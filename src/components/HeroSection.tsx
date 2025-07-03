@@ -31,7 +31,7 @@ const HeroSection = () => {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-playfair font-bold text-white mb-6 leading-tight drop-shadow-lg">
-            Bem-vindo à <span className="bg-gradient-to-r from-rose-400 via-rose-300 to-rose-500 bg-clip-text text-transparent font-extrabold">Emmy Store</span>
+            Bem-vindo à <span className="bg-gradient-to-r from-[#bd8c90] via-[#d4c1c7] to-[#bd8c90] bg-clip-text text-transparent font-extrabold">Emmy Store</span>
           </h1>
           
           <p className="text-lg md:text-xl lg:text-2xl text-white mb-8 max-w-2xl mx-auto font-inter leading-relaxed drop-shadow-md">
@@ -46,7 +46,7 @@ const HeroSection = () => {
             </button>
             <button onClick={() => document.querySelector('#sobre')?.scrollIntoView({
             behavior: 'smooth'
-          })} className="border-2 border-white text-white px-8 py-4 rounded-full font-inter font-semibold text-lg hover:border-rose-400 hover:text-rose-300 transition-all duration-300 backdrop-blur-sm bg-white/10 hover:bg-white/20">
+          })} className="border-2 border-white text-white px-8 py-4 rounded-full font-inter font-semibold text-lg hover:border-[#bd8c90] hover:text-[#bd8c90] transition-all duration-300 backdrop-blur-sm bg-white/10 hover:bg-white/20">
               Saiba Mais
             </button>
           </div>

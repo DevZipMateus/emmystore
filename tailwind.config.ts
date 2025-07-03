@@ -63,18 +63,18 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Paleta Rose Gold Metallic da Emmy Store - Baseada na imagem
+				// Paleta Rose Gold Metallic da Emmy Store - Baseada na nova cor #bd8c90
 				rose: {
-					50: '#faf5f2',
-					100: '#f5ebe5',
-					200: '#ebd4cb',
-					300: '#deb8a8',
-					400: '#cd9681',
-					500: '#b8806a',
-					600: '#a36b56',
-					700: '#8a5a49',
-					800: '#72493e',
-					900: '#5e3d34'
+					50: '#faf8f8',
+					100: '#f4eff0',
+					200: '#e7dce0',
+					300: '#d4c1c7',
+					400: '#bd8c90',
+					500: '#bd8c90',
+					600: '#a87b80',
+					700: '#8e666c',
+					800: '#75545a',
+					900: '#62474c'
 				}
 			},
 			fontFamily: {

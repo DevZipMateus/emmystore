@@ -28,20 +28,20 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <button onClick={() => scrollToSection('inicio')} className="text-gray-600 hover:text-rose-500 transition-colors duration-300 font-inter">
+            <button onClick={() => scrollToSection('inicio')} className="text-gray-600 hover:text-[#bd8c90] transition-colors duration-300 font-inter">
               Início
             </button>
-            <button onClick={() => scrollToSection('sobre')} className="text-gray-600 hover:text-rose-500 transition-colors duration-300 font-inter">
+            <button onClick={() => scrollToSection('sobre')} className="text-gray-600 hover:text-[#bd8c90] transition-colors duration-300 font-inter">
               Sobre
             </button>
-            <button onClick={() => scrollToSection('servicos')} className="text-gray-600 hover:text-rose-500 transition-colors duration-300 font-inter">
+            <button onClick={() => scrollToSection('servicos')} className="text-gray-600 hover:text-[#bd8c90] transition-colors duration-300 font-inter">
               Serviços
             </button>
             
-            <button onClick={() => scrollToSection('instagram')} className="text-gray-600 hover:text-rose-500 transition-colors duration-300 font-inter">
+            <button onClick={() => scrollToSection('instagram')} className="text-gray-600 hover:text-[#bd8c90] transition-colors duration-300 font-inter">
               Instagram
             </button>
-            <button onClick={() => scrollToSection('localizacao')} className="text-gray-600 hover:text-rose-500 transition-colors duration-300 font-inter">
+            <button onClick={() => scrollToSection('localizacao')} className="text-gray-600 hover:text-[#bd8c90] transition-colors duration-300 font-inter">
               Localização
             </button>
             <button onClick={() => scrollToSection('contato')} className="metallic-button text-white px-6 py-2 rounded-full font-inter font-semibold">
@@ -50,7 +50,7 @@ const Header = () => {
           </nav>
 
           {/* Mobile menu button */}
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden text-gray-600 hover:text-rose-500 transition-colors duration-300" aria-label="Toggle menu">
+          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden text-gray-600 hover:text-[#bd8c90] transition-colors duration-300" aria-label="Toggle menu">
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
@@ -61,37 +61,37 @@ const Header = () => {
               <button onClick={() => {
             scrollToSection('inicio');
             setIsMenuOpen(false);
-          }} className="text-left text-gray-600 hover:text-rose-500 transition-colors duration-300 font-inter">
+          }} className="text-left text-gray-600 hover:text-[#bd8c90] transition-colors duration-300 font-inter">
                 Início
               </button>
               <button onClick={() => {
             scrollToSection('sobre');
             setIsMenuOpen(false);
-          }} className="text-left text-gray-600 hover:text-rose-500 transition-colors duration-300 font-inter">
+          }} className="text-left text-gray-600 hover:text-[#bd8c90] transition-colors duration-300 font-inter">
                 Sobre
               </button>
               <button onClick={() => {
             scrollToSection('servicos');
             setIsMenuOpen(false);
-          }} className="text-left text-gray-600 hover:text-rose-500 transition-colors duration-300 font-inter">
+          }} className="text-left text-gray-600 hover:text-[#bd8c90] transition-colors duration-300 font-inter">
                 Serviços
               </button>
               <button onClick={() => {
             scrollToSection('produtos');
             setIsMenuOpen(false);
-          }} className="text-left text-gray-600 hover:text-rose-500 transition-colors duration-300 font-inter">
+          }} className="text-left text-gray-600 hover:text-[#bd8c90] transition-colors duration-300 font-inter">
                 Produtos
               </button>
               <button onClick={() => {
             scrollToSection('instagram');
             setIsMenuOpen(false);
-          }} className="text-left text-gray-600 hover:text-rose-500 transition-colors duration-300 font-inter">
+          }} className="text-left text-gray-600 hover:text-[#bd8c90] transition-colors duration-300 font-inter">
                 Instagram
               </button>
               <button onClick={() => {
             scrollToSection('localizacao');
             setIsMenuOpen(false);
-          }} className="text-left text-gray-600 hover:text-rose-500 transition-colors duration-300 font-inter">
+          }} className="text-left text-gray-600 hover:text-[#bd8c90] transition-colors duration-300 font-inter">
                 Localização
               </button>
               <button onClick={() => {

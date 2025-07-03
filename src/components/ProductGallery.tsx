@@ -78,7 +78,7 @@ const ProductGallery = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-playfair font-bold text-gray-800 mb-6">
-            Nossa <span className="text-rose-500">Galeria</span>
+            Nossa <span className="text-[#bd8c90]">Galeria</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto font-inter leading-relaxed">
             Conheça nossa coleção de roupas femininas com qualidade e estilo únicos.
@@ -133,7 +133,7 @@ const ProductGallery = () => {
               const message = encodeURIComponent("Olá! Gostaria de conhecer mais produtos da Emmy Store.");
               window.open(`https://wa.me/5515991606506?text=${message}`, '_blank');
             }}
-            className="bg-rose-500 text-white px-8 py-4 rounded-full font-inter font-semibold text-lg hover:bg-rose-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center mx-auto"
+            className="bg-[#bd8c90] text-white px-8 py-4 rounded-full font-inter font-semibold text-lg hover:bg-[#a87b80] transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center mx-auto"
           >
             <img 
               src="/lovable-uploads/6ce76677-2d58-45c8-81de-3e13ba1cf2f5.png" 
