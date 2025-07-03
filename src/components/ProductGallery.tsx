@@ -45,30 +45,18 @@ const ProductGallery = () => {
     },
     {
       id: 6,
-      image: '/lovable-uploads/fe85c3c3-8fb9-4098-ba8d-762ba66cec5e.png',
-      title: 'Coleção de Blusas com Pérolas',
-      description: 'Blusas decoradas com pérolas - R$ 79,90'
-    },
-    {
-      id: 7,
       image: '/lovable-uploads/408bac3f-1e5b-4b75-b960-fee43530dde5.png',
       title: 'Vestido Verde Elegante',
       description: 'Vestido verde com detalhes em franzido'
     },
     {
-      id: 8,
-      image: '/lovable-uploads/c3e2fef8-d287-44a6-ac5c-9ebcfba55d76.png',
-      title: 'Blusas Variadas',
-      description: 'Coleção de blusas - Apenas R$ 59,90'
-    },
-    {
-      id: 9,
+      id: 7,
       image: '/lovable-uploads/fafd4c8f-a65a-4e5e-baf7-6cb7555be82d.png',
       title: 'Blusas Emmy Multicores',
       description: 'Variedade de cores da marca Emmy'
     },
     {
-      id: 10,
+      id: 8,
       image: '/lovable-uploads/38c9e00b-77de-4e11-8805-0a9c1d17a274.png',
       title: 'Blusa Listrada Emmy',
       description: 'Blusa com listras pretas e brancas'
