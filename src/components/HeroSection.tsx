@@ -31,7 +31,7 @@ const HeroSection = () => {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-playfair font-bold text-white mb-6 leading-tight drop-shadow-lg">
-            Bem-vindo à <span className="text-[#bd8c90] font-extrabold">Emmy Store</span>
+            Bem-vindo à <span className="bg-gradient-to-r from-[#bd8c90] via-[#d4c1c7] to-[#bd8c90] bg-clip-text text-transparent font-extrabold">Emmy Store</span>
           </h1>
           
           <p className="text-lg md:text-xl lg:text-2xl text-white mb-8 max-w-2xl mx-auto font-inter leading-relaxed drop-shadow-md">

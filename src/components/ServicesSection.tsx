@@ -43,7 +43,7 @@ const ServicesSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-playfair font-bold text-gray-800 mb-6">
-              Nossos <span className="text-[#bd8c90] font-extrabold">Serviços</span>
+              Nossos <span className="bg-gradient-to-r from-[#bd8c90] via-[#d4c1c7] to-[#bd8c90] bg-clip-text text-transparent font-extrabold">Serviços</span>
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto font-inter leading-relaxed">
               Oferecemos uma experiência completa de compra, desde a seleção dos produtos 
