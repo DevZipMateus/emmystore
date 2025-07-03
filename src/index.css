@@ -94,29 +94,39 @@
     animation: float 3s ease-in-out infinite;
   }
 
-  /* Gradientes metálicos personalizados */
+  /* Gradientes metálicos personalizados - Baseados na imagem rose gold */
   .gradient-rose-gold {
-    background: linear-gradient(135deg, #fef7f0 0%, #fad5b8 25%, #f6b886 50%, #d97741 75%, #c5622f 100%);
+    background: linear-gradient(135deg, #faf5f2 0%, #ebd4cb 25%, #deb8a8 50%, #b8806a 75%, #a36b56 100%);
     position: relative;
+    overflow: hidden;
   }
 
   .gradient-rose-gold::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.3) 50%, transparent 70%);
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+    transition: left 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     pointer-events: none;
   }
 
+  .gradient-rose-gold:hover::before {
+    left: 100%;
+  }
+
   .metallic-rose {
-    background: linear-gradient(135deg, #d97741 0%, #f6b886 25%, #fad5b8 50%, #f6b886 75%, #d97741 100%);
-    background-size: 200% 200%;
-    animation: metallic-shimmer 3s ease-in-out infinite;
+    background: linear-gradient(145deg, #b8806a 0%, #deb8a8 20%, #f5ebe5 40%, #deb8a8 60%, #b8806a 80%, #a36b56 100%);
+    background-size: 300% 300%;
+    animation: metallic-shimmer 4s ease-in-out infinite;
     position: relative;
     overflow: hidden;
+    box-shadow: 
+      inset 0 1px 0 rgba(255, 255, 255, 0.3),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.1),
+      0 4px 8px rgba(163, 107, 86, 0.2);
   }
 
   .metallic-rose::before {
@@ -126,8 +136,8 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-    transition: left 0.5s;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+    transition: left 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .metallic-rose:hover::before {
@@ -135,8 +145,14 @@
   }
 
   @keyframes metallic-shimmer {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
+    0%, 100% { 
+      background-position: 0% 50%;
+      transform: scale(1);
+    }
+    50% { 
+      background-position: 100% 50%;
+      transform: scale(1.02);
+    }
   }
 
   .gradient-blue {
@@ -158,17 +174,24 @@
   }
 
   .metallic-button {
-    background: linear-gradient(135deg, #d97741, #f6b886, #d97741);
-    background-size: 200% 200%;
+    background: linear-gradient(145deg, #b8806a 0%, #deb8a8 20%, #f5ebe5 40%, #deb8a8 60%, #b8806a 80%, #a36b56 100%);
+    background-size: 300% 300%;
     position: relative;
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 
+      inset 0 1px 0 rgba(255, 255, 255, 0.3),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.1),
+      0 4px 12px rgba(163, 107, 86, 0.25);
   }
 
   .metallic-button:hover {
     background-position: 100% 0%;
-    box-shadow: 0 8px 25px rgba(217, 119, 65, 0.4);
-    transform: translateY(-2px);
+    box-shadow: 
+      inset 0 1px 0 rgba(255, 255, 255, 0.4),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.15),
+      0 8px 25px rgba(163, 107, 86, 0.4);
+    transform: translateY(-2px) scale(1.02);
   }
 
   .metallic-button::before {
@@ -178,8 +201,8 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-    transition: left 0.5s;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+    transition: left 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .metallic-button:hover::before {
