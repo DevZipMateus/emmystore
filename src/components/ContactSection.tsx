@@ -33,7 +33,7 @@ const ContactSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-playfair font-bold text-gray-800 mb-6">
-              Entre em <span className="bg-gradient-to-r from-[#bd8c90] via-[#d4c1c7] to-[#bd8c90] bg-clip-text text-transparent font-extrabold">Contato</span>
+              Entre em <span className="text-[#bd8c90] font-extrabold">Contato</span>
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto font-inter leading-relaxed">
               Estamos sempre prontos para atendê-lo. Entre em contato conosco e 
@@ -149,7 +149,7 @@ const ContactSection = () => {
                       href="https://wa.me/5515991606506"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-gradient-to-r from-rose-600 via-rose-500 to-rose-700 bg-clip-text text-transparent hover:from-rose-700 hover:via-rose-600 hover:to-rose-800 font-inter transition-all duration-300"
+                      className="text-[#bd8c90] hover:text-[#a87b80] font-inter transition-all duration-300"
                     >
                       (15) 99160-6506
                     </a>
@@ -159,7 +159,7 @@ const ContactSection = () => {
                     <h4 className="font-inter font-semibold text-gray-800 mb-2">E-mail</h4>
                     <a 
                       href="mailto:emmy.store15@gmail.com"
-                      className="bg-gradient-to-r from-rose-600 via-rose-500 to-rose-700 bg-clip-text text-transparent hover:from-rose-700 hover:via-rose-600 hover:to-rose-800 font-inter transition-all duration-300"
+                      className="text-[#bd8c90] hover:text-[#a87b80] font-inter transition-all duration-300"
                     >
                       emmy.store15@gmail.com
                     </a>
