@@ -33,7 +33,7 @@ const ContactSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-playfair font-bold text-gray-800 mb-6">
-              Entre em <span className="text-rose-500">Contato</span>
+              Entre em <span className="bg-gradient-to-r from-rose-600 via-rose-500 to-rose-700 bg-clip-text text-transparent font-extrabold">Contato</span>
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto font-inter leading-relaxed">
               Estamos sempre prontos para atendê-lo. Entre em contato conosco e 
@@ -116,7 +116,7 @@ const ContactSection = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-rose-500 text-white px-8 py-4 rounded-lg font-inter font-semibold text-lg hover:bg-rose-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center"
+                  className="w-full metallic-button text-white px-8 py-4 rounded-lg font-inter font-semibold text-lg shadow-lg flex items-center justify-center"
                 >
                   <img 
                     src="/lovable-uploads/6ce76677-2d58-45c8-81de-3e13ba1cf2f5.png" 
@@ -149,7 +149,7 @@ const ContactSection = () => {
                       href="https://wa.me/5515991606506"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-rose-500 hover:text-rose-600 font-inter transition-colors duration-300"
+                      className="bg-gradient-to-r from-rose-600 via-rose-500 to-rose-700 bg-clip-text text-transparent hover:from-rose-700 hover:via-rose-600 hover:to-rose-800 font-inter transition-all duration-300"
                     >
                       (15) 99160-6506
                     </a>
@@ -159,7 +159,7 @@ const ContactSection = () => {
                     <h4 className="font-inter font-semibold text-gray-800 mb-2">E-mail</h4>
                     <a 
                       href="mailto:emmy.store15@gmail.com"
-                      className="text-rose-500 hover:text-rose-600 font-inter transition-colors duration-300"
+                      className="bg-gradient-to-r from-rose-600 via-rose-500 to-rose-700 bg-clip-text text-transparent hover:from-rose-700 hover:via-rose-600 hover:to-rose-800 font-inter transition-all duration-300"
                     >
                       emmy.store15@gmail.com
                     </a>
@@ -172,7 +172,7 @@ const ContactSection = () => {
                         href="https://www.instagram.com/emmy.store15?igsh=MW1xMWZocGI1YXZ2eg=="
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-rose-500 p-3 rounded-full text-white hover:bg-rose-600 transition-all duration-300 hover:scale-110"
+                        className="metallic-rose p-3 rounded-full text-white transition-all duration-300 hover:scale-110"
                       >
                         <Instagram className="w-6 h-6" />
                       </a>

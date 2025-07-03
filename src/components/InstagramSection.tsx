@@ -38,15 +38,15 @@ const InstagramSection = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-4">
-            <Instagram className="w-8 h-8 text-rose-500 mr-3" />
+            <Instagram className="w-8 h-8 text-rose-600 mr-3" />
             <h2 className="text-3xl md:text-4xl font-playfair font-bold text-gray-800">
-              Siga-nos no <span className="text-rose-500">Instagram</span>
+              Siga-nos no <span className="bg-gradient-to-r from-rose-600 via-rose-500 to-rose-700 bg-clip-text text-transparent font-extrabold">Instagram</span>
             </h2>
           </div>
           <p className="text-lg text-gray-600 font-inter max-w-2xl mx-auto mb-6">
             Acompanhe nossos produtos mais recentes, promoções especiais e novidades da Emmy Store
           </p>
-          <a href="https://www.instagram.com/emmy.store15?igsh=MW1xMWZocGI1YXZ2eg==" target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-gradient-to-r from-rose-400 to-rose-500 text-white px-8 py-3 rounded-full font-inter font-semibold text-lg hover:from-rose-500 hover:to-rose-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
+          <a href="https://www.instagram.com/emmy.store15?igsh=MW1xMWZocGI1YXZ2eg==" target="_blank" rel="noopener noreferrer" className="inline-flex items-center metallic-button text-white px-8 py-3 rounded-full font-inter font-semibold text-lg shadow-lg">
             <Instagram className="w-5 h-5 mr-2" />
             @emmy.store15
           </a>
@@ -63,7 +63,7 @@ const InstagramSection = () => {
         {/* Call to Action */}
         <div className="text-center mt-12">
           <p className="text-gray-600 font-inter mb-4">
-            Marque suas fotos com <span className="font-semibold text-rose-500">#EmmyStore</span> para aparecer aqui!
+            Marque suas fotos com <span className="font-semibold bg-gradient-to-r from-rose-600 via-rose-500 to-rose-700 bg-clip-text text-transparent">#EmmyStore</span> para aparecer aqui!
           </p>
         </div>
       </div>

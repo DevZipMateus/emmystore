@@ -58,7 +58,7 @@ const ServicesSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-playfair font-bold text-gray-800 mb-6">
-              Nossos <span className="text-rose-500">Serviços</span>
+              Nossos <span className="bg-gradient-to-r from-rose-600 via-rose-500 to-rose-700 bg-clip-text text-transparent font-extrabold">Serviços</span>
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto font-inter leading-relaxed">
               Oferecemos uma experiência completa de compra, desde a seleção dos produtos 
@@ -91,7 +91,7 @@ const ServicesSection = () => {
           <div className="text-center mt-12">
             <button 
               onClick={() => document.querySelector('#contato')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-rose-500 text-white px-8 py-4 rounded-full font-inter font-semibold text-lg hover:bg-rose-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+              className="metallic-button text-white px-8 py-4 rounded-full font-inter font-semibold text-lg shadow-lg"
             >
               Saiba Mais Sobre Nossos Serviços
             </button>

@@ -33,10 +33,10 @@ const WhatsAppButton = () => {
     <div className="fixed bottom-6 right-6 z-50">
       {/* Tooltip */}
       {showTooltip && (
-        <div className="absolute bottom-full right-0 mb-4 bg-white rounded-lg shadow-lg p-4 max-w-xs">
+        <div className="absolute bottom-full right-0 mb-4 bg-white rounded-lg shadow-lg p-4 max-w-xs border-l-4 border-rose-500">
           <div className="flex items-start justify-between">
             <div>
-              <p className="text-sm font-inter font-semibold text-gray-800 mb-1">
+              <p className="text-sm font-inter font-semibold bg-gradient-to-r from-rose-600 via-rose-500 to-rose-700 bg-clip-text text-transparent mb-1">
                 Precisa de ajuda?
               </p>
               <p className="text-xs font-inter text-gray-600">

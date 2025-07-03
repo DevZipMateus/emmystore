@@ -58,7 +58,7 @@ const Header = () => {
             <button onClick={() => scrollToSection('localizacao')} className="text-gray-600 hover:text-rose-500 transition-colors duration-300 font-inter">
               Localização
             </button>
-            <button onClick={() => scrollToSection('contato')} className="bg-rose-500 text-white px-6 py-2 rounded-full hover:bg-rose-600 transition-all duration-300 font-inter">
+            <button onClick={() => scrollToSection('contato')} className="metallic-button text-white px-6 py-2 rounded-full font-inter font-semibold">
               Contato
             </button>
           </nav>
@@ -95,7 +95,7 @@ const Header = () => {
               <button onClick={() => { scrollToSection('localizacao'); setIsMenuOpen(false); }} className="text-left text-gray-600 hover:text-rose-500 transition-colors duration-300 font-inter">
                 Localização
               </button>
-              <button onClick={() => { scrollToSection('contato'); setIsMenuOpen(false); }} className="bg-rose-500 text-white px-6 py-2 rounded-full hover:bg-rose-600 transition-all duration-300 font-inter text-center">
+              <button onClick={() => { scrollToSection('contato'); setIsMenuOpen(false); }} className="metallic-button text-white px-6 py-2 rounded-full font-inter font-semibold text-center">
                 Contato
               </button>
             </div>

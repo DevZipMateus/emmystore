@@ -63,18 +63,18 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Paleta personalizada da Emmy Store - alterada para #b08983
+				// Paleta Rose Gold Metallic da Emmy Store
 				rose: {
-					50: '#faf8f7',
-					100: '#f5f0ee',
-					200: '#ebe0dc',
-					300: '#dcc9c0',
-					400: '#c7a698',
-					500: '#b08983',
-					600: '#9c6f68',
-					700: '#825955',
-					800: '#6c4a47',
-					900: '#5a3e3c'
+					50: '#fef7f0',
+					100: '#fdeee0',
+					200: '#fad5b8',
+					300: '#f6b886',
+					400: '#f09352',
+					500: '#d97741',
+					600: '#c5622f',
+					700: '#a4522a',
+					800: '#874529',
+					900: '#6f3a25'
 				}
 			},
 			fontFamily: {
